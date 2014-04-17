@@ -172,3 +172,28 @@ footer p {
         clear: both;
     }
 }
+
+img.left {
+    float: left;
+    max-width: 50%;
+    margin: 5px 20px 10px 0;
+}
+img.right {
+    float: right;
+    max-width: 50%; /* Responsive width */
+    margin: 5px 0 10px 20px;
+}
+img.leftAlone {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
