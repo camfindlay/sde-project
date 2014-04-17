@@ -6,20 +6,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Business Casual</a>
+        <a class="navbar-brand" href="$BaseHref">Business Casual</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a>
-            </li>
-            <li><a href="about.html">About</a>
-            </li>
-            <li><a href="blog.html">Blog</a>
-            </li>
-            <li><a href="contact.html">Contact</a>
-            </li>
+            <% loop $Menu(1) %>
+                <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+            <% end_loop %>
         </ul>
     </div>
     <!-- /.navbar-collapse -->
