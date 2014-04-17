@@ -32,6 +32,11 @@ class Page_Controller extends ContentController {
 		parent::init();
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
+        $themeDir = SSViewer::get_theme_folder();
+        Requirements::themedCSS('bootstrap');
+        Requirements::themedCSS('business-casual');
+        Requirements::javascript($themeDir . '/js/jquery-1.10.2.js');
+        Requirements::javascript($themeDir . '/js/bootstrap.js');
 	}
 
 }
